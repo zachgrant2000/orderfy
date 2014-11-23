@@ -26,28 +26,32 @@
 			<div class ="row">
 				<div class="col-sm-6">
 					<br/>
-					<h1><strong><em>SIGN-UP FOR ORDERFY!</em></strong></h1>
+					<h1><strong>SIGN-UP FOR ORDERFY!</strong></h1>
 					<br/>
 				</div>
 				<div class="col-md-8 col-sm-12">
                     <form action="signup.pl" id="signup" method="post">
 					<label for="loginName">Enter User Name:</label><br/>
 					<input type="text" id="login" name="login"/>
-					<p><em>**using first name will make finding other users easier**</em></p>
-					<br/>
+					<p><em>include first name to make finding each other easier</em></p>
+
 					<label for="password">Enter Password:</label><br/>
 					<input type="text" id="password" name="password"/>
 					<br/>
-					<br/>
+
 					<label for="passwordConfirmation">Re-Enter Password:</label><br/>
 					<input type="text" id="city" name="city"/>
 					<br/>
-					<br/>
+
 					<label for="favColor">Select Favorite Color:</label><br/>
 					<input type="color" id="color" name="color"/>
 					<br/>
-					<br/>
-					<h3>PAYMENT INFO:</h3>
+
+				  	<label for="passwordConfirmation">Enter Phone Number:</label><br/>
+				  	<input type="text" id="city" name="city"/>
+				  	<br/>
+
+				  	<h3>PAYMENT INFO:</h3>
 					<label for="cc type">Select Credit Card Type:</label><br/>
 					<select name="cc">
 					<option value="visa">VISA
@@ -56,42 +60,65 @@
 					<option value="disc">DISC
 					</select>
 					<br>
-					<br/>
+					<p></p>
+
 					<label for="cc #">Enter Credit Card Number:</label><br/>
 					<input type="text" id="city" name="city"/>
 					<br/>
+				  	<p></p>
+
+					<label for="CVV code">Enter CVV code: <br/> <em>3-4 digit code on front or back</em></label><br/>
+					<input type="text" id="city" name="city"/>
 					<br/>
-					<label for="CVV code">Enter CVV code: <br/> <em>*3-4 digit code on front or back</em></label><br/>
+				  	<p></p>
+
+				  	<label for="expDate">Enter Expiration Date:</label><br/>
+					<input type="text" id="city" name="city"/>
+					<br/>
+				  	<p></p>
+					
+					<h3>Address:</h3>
+					<label for="street">Street:</label><br/>
+					<input type="text" id="city" name="city"/>
+					<br/>
+					<p></p>
+
+					<label for="city">City:</label><br/>
+					<input type="text" id="city" name="city"/>
+					<br/>
+				  	<p></p>
+
+
+				  	<label for="state">State: </label><br/>
+					<input type="text" id="city" name="city"/>
+					<br/>
+				  	<p></p>
+
+
+				  	<label for="zipCode">Zip Code:</label><br/>
 					<input type="text" id="city" name="city"/>
 					<br/>
 					<br/>
-					<label for="CVV code">Enter CVV code: <br/> <em>*3-4 digit code on front or back</em></label><br/>
-					<input type="text" id="city" name="city"/>
-					<br/>
-					<br/>
+
 				</div>
 				<div class="col-md-4 col-sm-12" style="margin-top: 15em; text-align: center;">
 					<img src="" width = "150" height = "150" alt = "selfie will show here when uploaded" style="display: block; margin: 0 auto;"/>
 					<br/>
-					<button type="submit" class="btn btn-lg btn-primary">SIGN UP!</button>
+					<a href="customer.html"><button type="submit" class="btn btn-lg btn-primary">SIGN UP!</button></a>
 </form>
-					<br/>
-					<br/>
-					<br/>
-					<a href="customer.html"><button type="button" class="btn btn-lg btn-primary">SIGN UP!</button> </a>
+
 				</div>
 			</div>
 		</section>
-		<section class ="footer"  style="text-align: center;">
+		<footer class ="footer"  style="text-align: center; padding-bottom: !important;">
 			<div class="col-lg-12" style="background-color: #183440; color: white;" >
 				<h2 style="text-"><em><strong>ORDERFY!</strong></em></h2>
 				<h3><em><strong>Anything. Delivered.</strong></em></h3>
 				<h4><strong>575 - 418 - 3410</strong></h4>
 				<h4><strong>WWW.ORDERFY.CO</strong></h4>
 				<h4><strong>orderfyABQ@gmail.com</strong></h4>
-
 			</div>
-		</section>
+		</footer>
 	</body>
 </html>
 
