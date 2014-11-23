@@ -2,9 +2,34 @@
 <html>
 	<head lang="en">
 		<meta charset="UTF-8">
-		<title>Be a Gopher</title>
+		<title>Order Form</title>
 	</head>
 	<body>
-		<p> test </p>
+
+		<h1>Order Submission Page</h1>
+		<form action="formprocessor.php" method="post">
+			<h3>Cost of Order</h3>
+			<p>How much do you expect your order to cost?</p>
+			<input type="text" name="orderPrice" value= <?php $formOrderPrice ?>/>
+
+			<h3>Delivery Cost Bid</h3>
+			<p>The price you are wiling to pay to have your order delivered to you.</p>
+			<input type="text" name="deliveryBid"/>
+
+			<h3>Describe your order</h3>
+			<p>What do you want us to order for you?</p>
+			<input type="text" name="describeOrder"/>
+
+			<h3>Location</h3>
+			<p>Where would you like to have your food delivered to?</p>
+			<input type="text" name="location"/>
+
+			<h3>Phone Number</h3>
+			<p>Let us know your phone number so we can let you know you're order is ready.</p>
+			<input type="text" name="phoneNumber"/>
+
+			<br/>
+			<input type="submit" name="submit" value="Submit Order"/>
+		</form>
 	</body>
 </html>
