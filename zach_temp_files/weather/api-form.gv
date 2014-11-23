@@ -1,0 +1,23 @@
+digraph G {
+	/* first, set the defualt settings */
+	node [fontname="Helvetica",shape=box];
+	edge [arrowhead=vee,fontname="Helvetica"];
+
+	/* second, declare what actually appears as a variable */
+	userInput [label="User enters data"];
+	whatKind [label="What kind of data was it?", shape=diamond];
+	cityName [label="City name"];
+	gps [label="GPS coordinates"];
+	badData [label="Malicious or incompetent"];
+	display [label="Display HTML formatted weather data"];
+	exception [label="Throw an exception"];
+
+	/*finally, connect them */
+	userInput -> whatKind;
+	whatKind -> cityName [label="Search for a city"];
+	whatKind -> gps [label="Geolocation"];
+	whatKind -> badData [label="Something else"];
+	badData -> exception;
+	cityName -> display;
+	gps -> display;
+}
