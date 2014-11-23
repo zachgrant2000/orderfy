@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 	<head lang="en">
 		<meta charset="UTF-8">
-		<title>Orderfy Customer</title>
+		<title>Orderfy Runner</title>
 		<!-- Latest compiled and minified CSS -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
+		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
 		<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
@@ -17,7 +17,7 @@
 		<header style="background-color: #183440; text-align: left;">
 			<div class="container">
 				<div class="col-sm-12">
-					<img src="logowhite.svg" alt = "logo placeholder" style="padding: 1em; display: block; margin: 0 auto;"/>
+					<img class=image-responsive src="logowhite.svg" alt = "logo placeholder" style="padding: 1em; display: block; margin: 0 auto;"/>
 				</div>
 			</div>
 		</header>
@@ -26,47 +26,45 @@
 			<div class ="row">
 				<div class="col-lg-12">
 					<br/>
-					<h1><strong>THIS IS YOUR CUSTOMER PAGE!</strong></h1>
-					<a href="runner.html"><button type="button" class="btn btn-md btn-primary">Be A Runner Instead</button> </a>
+					<h1><strong>THIS IS YOUR RUNNER PAGE!</strong></h1>
+					<a href="customer.html"><button type="button" class="btn btn-md btn-primary">Be A Customer Instead</button> </a>
 					<br/>
 					<br/>
 					<br/>
 					<br/>
 				</div>
 				<div class="col-sm-12">
-					<label for="runnersNearby">Number of Active Runners Within Range</label><br/>
+					<label for="minBid">Post The Lowest Bid You Would Consider:</label><br/>
+					<label for="minBidexample"><em>ex. $10.25</em></label><br/>
 					<input type="number" id="city" name="city"/><br/>
-					<a href="gopher.html"><button type="button" class="btn btn-sm btn-primary">Refresh</button> </a>
+					<a href="gopher.html"><button type="button" class="btn btn-sm btn-primary">Post</button> </a>
 					<br/>
 					<br/>
 					<br/>
 
-					<label for="bidPost">Post Your Bid!:</label><br/>
-					<br/>
-					<br/>
-					<label for="description">What Do You Need?</label><br/>
-					<label for="descriptionEx"><em>Be As Specific or Unspecific as You Want!</em></label><br/>
-					<input type="number" id="city" name="city"/>
-					<br/>
-					<br/>
-					<br/>
-
-					<label for="amountForGoods"><em>Value For Goods Only</em></label><br/>
-					<button type="button" class="btn btn-sm btn-primary">On Duty</button> </a>
+					<label for="minRadius">Post The Farthest Radius You Would Travel:</label><br/>
+					<label for="minRadiusExample"><em>*enter number between 0 and 10</em></label><br/>
+					<input type="number" id="city" name="city"/><label for="minRadius">miles</label><br/>
+					<a href="gopher.html"><button type="button" class="btn btn-sm btn-primary">Post</button> </a>
 					<br/>
 					<br/>
 					<br/>
 
-					<label for="amountForDelivery">Value For Delivery</label><br/>
+					<label for="onDuty">Hit "On Duty" To See First Qualifying Bid:</label><br/>
+					<button type="button" class="btn btn-sm btn-primary" onclick="statusButtonToChangeToFlakeIfBidSelectedOrOffDutyIfBidNotSelected()">On Duty</button> </a>
+					<br/>
+					<br/>
+					<br/>
+
+					<label for="bidDisplay">Select a Bid!</label><br/>
+					<label for="bidDisplay"><em>(You Can Also Decline or Skip to See Next Valid Bid)</em></label><br/>
 					<input type="number" id="city" name="city"/><br/>
 					<br/>
-					<a href="gopher.html"><button type="button" class="btn btn-sm btn-primary">Post Your Bid!</button> </a>
 					<br/>
 					<br/>
 
-					<label for="bidDetails">Your Runner Is:</label><br/>
+					<label for="bidDetails">Details for Selected Bid:</label><br/>
 					<input type="number" id="city" name="city"/><br/>
-					<img src="" align="center" width = "150" height = "150" alt = "selfie will show here when your bid is selected" style="align-content: center; display: block; margin: 0 auto;"/>
 					<br/>
 					<br/>
 					<br/>
@@ -94,7 +92,7 @@
 		</section>
 		<section class ="footer"  style="text-align: center;">
 			<div class="col-lg-12" style="background-color: #183440; color: white;" >
-				<h2 style="text-"><em><strong>ORDERFY!</strong></em></h2>
+				<h2 style="text-"><strong>ORDERFY!</strong></h2>
 				<h3><em><strong>Anything. Delivered.</strong></em></h3>
 				<h4><strong>575 - 418 - 3410</strong></h4>
 				<h4><strong>WWW.ORDERFY.CO</strong></h4>
