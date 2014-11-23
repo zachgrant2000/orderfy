@@ -45,18 +45,13 @@
 					<br/>
 					<h3>PAYMENT INFO:</h3>
 					<label for="cc type">Select Credit Card Type:</label><br/>
-					<div class="dropdown">
-						<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-							<em>*from menu</em>
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="text-align: center;">
-							<li>AMEX</li>
-							<li>Discover</li>
-							<li>Visa</li>
-							<li>MasterCard</li>
-						</ul>
-					</div>
+					<select name="cc">
+					<option value="visa">VISA
+					<option value="mc">MC
+					<option value="amex">AMEX
+					<option value="disc">DISC
+					</select>
+					<br>
 					<br/>
 					<label for="cc #">Enter Credit Card Number:</label><br/>
 					<input type="text" id="city" name="city"/>
